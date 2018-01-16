@@ -72,7 +72,7 @@ public class CalDay {
 	 */
 	public void addAppt(Appt appt) {
 		if (appt.getValid()) {
-			for (int i = 0; i < getAppts().size(); i++) {
+			for (int i = 0; i <= getAppts().size(); i++) {
 				//Put the appointment in the correct order - finish this
 				if (((Appt)getAppts().get(i)).getStartHour() >
 										appt.getStartHour()) {
@@ -111,7 +111,7 @@ public class CalDay {
 	
 	/** Sets appts */
 	private void setAppts(LinkedList<Appt> appts) {
-		if(appts!=null)
+		if(appts==null)
 				this.appts = appts;
 		
 		if(appts!=null&&appts.size()==0)
