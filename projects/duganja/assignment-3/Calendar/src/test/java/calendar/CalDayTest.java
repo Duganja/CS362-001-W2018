@@ -162,7 +162,7 @@ public class CalDayTest {
 			 assertNotNull(calDays.getAppts());
 
 			 String print = calDays.toString();
-			 String expected = "	 --- 10/5/2010 --- \n --- -------- Appointments ------------ --- \n\t2/2/1600 at 6:1am ,title, party\n 	2/2/1600 at 7:1am ,title, party\n 	2/2/1600 at 8:1am ,title, party\n 	2/2/1600 at 8:1am ,title, party\n [	2/2/1600 at 6:1am ,title, party\n, 	2/2/1600 at 7:1am ,title, party\n, 	2/2/1600 at 8:1am ,title, party\n, 	2/2/1600 at 8:1am ,title, party\n]\n";
+			 String expected = "	 --- 10/5/2010 --- \n --- -------- Appointments ------------ --- \n\t2/2/1600 at 6:1am ,title, party\n 	2/2/1600 at 7:1am ,title, party\n 	2/2/1600 at 8:1am ,title, party\n 	2/2/1600 at 8:1am ,title, party\n \n";
 			 assertEquals(expected, print);
 		 }
 //add more unit tests as you needed
