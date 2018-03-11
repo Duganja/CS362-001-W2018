@@ -1,0 +1,2 @@
+1. Bug in timetable at line 48. calDays.add() used instead of nextDay.add(). using the wrong list here causes an off by one error.
+2. Bug in timetable at line 63. daysDifference needs to start at 0. starting at one causes dates being added to be off by one. 
